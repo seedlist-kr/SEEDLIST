@@ -414,11 +414,16 @@ mc {
     display: none;
 }
 
-/* 푸터 footer */
+/* 푸터 footer, 메인 main */
+
+main {
+    padding-bottom: 40px;
+}
 
 footer {
-    margin-top: 40px;
-    position: relative;
+    bottom: 0;
+    height: 40px;
+    position: fixed;
     width: 100%;
     text-align: center;
     color: #202020;
