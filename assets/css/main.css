@@ -33,27 +33,27 @@ body {
 /* 메인 로고 main-logo */
 
 .main-logo {
-    margin-top: 9%;
+    margin-top: 7%;
     width: 100%;
-    height: 150px;
+    height: 180px;
     text-align: center;
 }
 
 .main-logo-img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
 }
 
 .main-logo-a {
     margin-top: 2%;
     width: 100%;
-    height: 150px;
+    height: 100px;
     text-align: center;
 }
 
 .main-logo-img-a {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 .social-btn {
@@ -234,8 +234,8 @@ body {
 }
 
 .error-img {
-    width: 350px;
-    height: 350px;
+    width: 50%;
+    height: 50%;
 }
 
 /* 메인 서치바 main-search */
