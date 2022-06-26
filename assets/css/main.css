@@ -234,6 +234,7 @@ body {
 }
 
 .error-img {
+    cursor: pointer;
     width: 50%;
     height: 50%;
 }
