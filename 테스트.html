@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keyword" content="시드서버, 시드리스트, seedlist, seedserver, seed list, seed server">
+        <meta name="description" content="시드서버 플레이를 도와줍니다.">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="시드리스트">
+        <meta property="og:url" content="https://seedlist.kr">
+        <meta property="og:image" content="https://seedlist.kr/assets/img/SLLOGO.png?220630">
+        <meta property="og:description" content="시드서버 플레이를 도와줍니다.">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <title>테스트</title>
+
+        <link rel="icon" href="assets/img/SLLOGO.png?220630" type="image/x-icon">
+        <link href="assets/css/main.css?220630" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+        <div class="cate-popup" id="cate-popup-c">
+            <div class="cate-popup-des">
+                <div class="cate-popup-close-out">
+                    <button id="cate-popup-close-c" class="cate-popup-close"><span class="material-icons">close</span></button>
+                </div>
+                <div class="cate-popup-part-1">
+                    <button class="cate-popup-btns active cate-all">전체</button>
+                    <button class="cate-popup-btns cate-1">일반 마법</button>
+                    <button class="cate-popup-btns cate-2">입자 마법</button>
+                    <button class="cate-popup-btns cate-3">저주 마법</button>
+                    <button class="cate-popup-btns cate-4">특수 마법</button>
+                    <button class="cate-popup-btns cate-5">고유 마법</button>
+                    <button class="cate-popup-btns cate-6">겉날개</button>
+                    <button class="cate-popup-btns cate-7">곡괭이</button>
+                    <button class="cate-popup-btns cate-8">낚싯대</button>
+                    <button class="cate-popup-btns cate-9">레깅스</button>
+                    <button class="cate-popup-btns cate-10">삼지창</button>
+                    <button class="cate-popup-btns cate-11">가위</button>
+                    <button class="cate-popup-btns cate-12">괭이</button>
+                    <button class="cate-popup-btns cate-13">도끼</button>
+                    <button class="cate-popup-btns cate-14">방패</button>
+                    <button class="cate-popup-btns cate-15">부츠</button>
+                    <button class="cate-popup-btns cate-16">쇠뇌</button>
+                    <button class="cate-popup-btns cate-17">투구</button>
+                    <button class="cate-popup-btns cate-18">흉갑</button>
+                    <button class="cate-popup-btns cate-19">검</button>
+                    <button class="cate-popup-btns cate-20">삽</button>
+                    <button class="cate-popup-btns cate-21">활</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-logo">
+            <a href="index"><img class="main-logo-img" src="assets/img/SLLOGO.png"></a>
+        </div>
+        <div class="main-search">
+            <input type="text" id="main-search-input" class="main-search-input" onkeyup="searchSys()" placeholder="마법, 능력, ...">
+        </div>
+        <div class="main-search-btn">
+            <button title="카테고리" id="cate-popup-btn-c" class="main-search-btn-des"><span class="material-icons">category</span></button>
+            <button title="마법 대입" class="main-search-btn-des" onclick="alert('마법 대입 시스템은 현재 개발중입니다..')"><span class="material-icons">settings_suggest</span></button>
+            <button title="계산기" class="main-search-btn-des" onclick="alert('계산기 시스템은 현재 개발중입니다..')"><span class="material-icons">calculate</span></button>
+            <button title="다크 / 라이트" class="main-search-btn-des" onclick=""><span class="material-icons">brightness_4</span></button>
+        </div>
+        <div class="main-search-list">
+            <ul id="main-search-list">
+                <!-- 일반 마법 -->
+                <li><a class="group-1 group-15" href="https://seedlist.kr/magic/vanilla/1"><mc>가벼운 착지</mc><br>추락 피해량이 감소합니다.</a></li>
+                <li><a class="group-1 group-9 group-15 group-17 group-18" href="https://seedlist.kr/magic/vanilla/2"><mc>가시</mc><br>피격시 공격자에게 피해를 줍니다.</a></li>
+                <li><a class="group-1 group-13 group-19" href="https://seedlist.kr/magic/vanilla/3"><mc>강타</mc><br>언데드 몹에게 추가 피해를 줍니다.</a></li>
+                <li><a class="group-1 group-16" href="https://seedlist.kr/magic/vanilla/4"><mc>관통</mc><br>화살이 개체와 방패를 관통합니다.</a></li>
+                <li><a class="group-1 group-10" href="https://seedlist.kr/magic/vanilla/5"><mc>급류</mc><br>던지면 삼지창과 플레이어가 함께 날아갑니다.</a></li>
+                <li><a class="group-1 group-16" href="https://seedlist.kr/magic/vanilla/6"><mc>다중 발사</mc><br>화살이 세 갈래로 발사됩니다.</a></li>
+                <li><a class="group-1 group-13 group-19" href="https://seedlist.kr/magic/vanilla/7"><mc>날카로움</mc><br>모든 몹에게 추가 피해를 줍니다.</a></li>
+                <li><a class="group-1 group-6 group-7 group-8 group-9 group-10 group-11 group-12 group-13 group-14 group-15 group-16 group-17 group-18 group-19 group-20 group-21" href="https://seedlist.kr/magic/vanilla/8"><mc>내구성</mc><br>내구도가 증가합니다.</a></li>
+                <li><a class="group-1 group-21" href="https://seedlist.kr/magic/vanilla/9"><mc>밀어내기</mc><br>피격된 대상을 밀칩니다.</a></li>
+                <li><a class="group-1 group-15" href="https://seedlist.kr/magic/vanilla/10"><mc>물갈퀴</mc><br>물속 이동 속도 증가합니다.</a></li>
+                <li><a class="group-1 group-19" href="https://seedlist.kr/magic/vanilla/11"><mc>밀치기</mc><br>피격된 대상을 밀칩니다.</a></li>
+                <li><a class="group-1 group-21" href="https://seedlist.kr/magic/vanilla/12"><mc>무한</mc><br>공격시 일반 화살을 소모하지 않습니다.</a></li>
+                <li><a class="group-1 group-8" href="https://seedlist.kr/magic/vanilla/13"><mc>미끼</mc><br>낚시에 걸리는 시간이 감소합니다.</a></li>
+                <li><a class="group-1 group-8" href="https://seedlist.kr/magic/vanilla/14"><mc>바다의 행운</mc><br>낚시에서 희귀 아이템이 낚일 확률이 증가합니다.</a></li>
+                <li><a class="group-1 group-9 group-15 group-17 group-18" href="https://seedlist.kr/magic/vanilla/15"><mc>발사체로부터 보호</mc><br>원거리 공격의 피해가 감소합니다.</a></li>
+                <li><a class="group-1 group-16" href="https://seedlist.kr/magic/vanilla/16"><mc>빠른 장전</mc><br>재장전 속도를 빠르게 합니다.</a></li>
+                <li><a class="group-1 group-21" href="https://seedlist.kr/magic/vanilla/17"><mc>발화</mc><br>피격된 대상에게 화염 피해를 줍니다.</a></li>
+                <li><a class="group-1 group-9 group-15 group-17 group-18" href="https://seedlist.kr/magic/vanilla/18"><mc>보호</mc><br>공허, 굶주림, 독 으로 인한 피해 외 모든 피해가 감소합니다.</a></li>
+                <li><a class="group-1 group-7 group-13 group-20" href="https://seedlist.kr/magic/vanilla/19"><mc>섬세한 손길</mc><br>아이템 대신 블록 자체가 드롭됩니다.</a></li>
+                <li><a class="group-1 group-13 group-19" href="https://seedlist.kr/magic/vanilla/20"><mc>살충</mc><br>벌레 몹에게 추가 피해를 줍니다.</a></li>
+                <li><a class="group-1 group-6 group-7 group-8 group-9 group-10 group-11 group-12 group-13 group-14 group-15 group-16 group-17 group-18 group-19 group-20 group-21" href="https://seedlist.kr/magic/vanilla/21"><mc>수선</mc><br>경험치를 사용하여 내구도를 회복합니다.</a></li>
+                <li><a class="group-1 group-15" href="https://seedlist.kr/magic/vanilla/22"><mc>차가운 걸음</mc><br>물 위를 걸을 때 얼음을 생성합니다.</a></li>
+                <li><a class="group-1 group-15" href="https://seedlist.kr/magic/vanilla/23"><mc>영혼 가속</mc><br>영혼 흙, 영혼 모래 위에서 속도가 증가합니다.</a></li>
+                <li><a class="group-1 group-10" href="https://seedlist.kr/magic/vanilla/24"><mc>찌르기</mc><br>수중 생물에게 추가 피해를 줍니다.</a></li>
+                <li><a class="group-1 group-17" href="https://seedlist.kr/magic/vanilla/25"><mc>친수성</mc><br>수중 채굴 속도가 향상됩니다.</a></li>
+                <li><a class="group-1 group-19" href="https://seedlist.kr/magic/vanilla/26"><mc>약탈</mc><br>몹이 전리품을 더 많이 드롭합니다.</a></li>
+                <li><a class="group-1 group-10" href="https://seedlist.kr/magic/vanilla/27"><mc>집전</mc><br>뇌우가 내릴 때 삼지창을 던져 몹이 맞으면 번개가 내려칩니다.</a></li>
+                <li><a class="group-1 group-10" href="https://seedlist.kr/magic/vanilla/28"><mc>충절</mc><br>던진 삼지창이 되돌아 옵니다.</a></li>
+                <li><a class="group-1 group-9 group-15 group-17 group-18" href="https://seedlist.kr/magic/vanilla/29"><mc>폭발로부터 보호</mc><br>폭발 피해가 감소합니다.</a></li>
+                <li><a class="group-1 group-9 group-15 group-17 group-18" href="https://seedlist.kr/magic/vanilla/30"><mc>화염으로부터 보호</mc><br>화염 피해가 감소합니다.</a></li>
+                <li><a class="group-1 group-19" href="https://seedlist.kr/magic/vanilla/31"><mc>휩쓸기</mc><br>쓸어내는 공격의 추가 피해를 줍니다.</a></li>
+                <li><a class="group-1 group-7 group-13 group-20" href="https://seedlist.kr/magic/vanilla/32"><mc>행운</mc><br>블록을 파괴했을 때 아이템이 더 많이 드랍될 확률이 증가합니다.</a></li>
+                <li><a class="group-1 group-17" href="https://seedlist.kr/magic/vanilla/33"><mc>호흡</mc><br>물속에서 호흡하는 시간이 증가합니다.</a></li>
+                <li><a class="group-1 group-21" href="https://seedlist.kr/magic/vanilla/34"><mc>화염</mc><br>화살에 불이 붙습니다.</a></li>
+                <li><a class="group-1 group-7" href="https://seedlist.kr/magic/vanilla/35"><mc>효율</mc><br>채굴 속도를 높입니다.</a></li>
+                <li><a class="group-1 group-21" href="https://seedlist.kr/magic/vanilla/36"><mc>힘</mc><br>화살 피해가 증가합니다.</a></li>
+                <!-- 입자 마법 -->
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>구리 입자</mc><br>wax_on 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>꿀 입자</mc><br>dripping_honey 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>네더 입자</mc><br>portal 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>눈 입자</mc><br>item_snowball 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>뒤틀린 입자</mc><br>warped_spore 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>레드스톤 입자</mc><br>dust 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>룬 입자</mc><br>enchant 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>마녀 입자</mc><br>witch 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>마법 입자</mc><br>enchanted_hit 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>먹물 입자</mc><br>squid_ink 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>물 입자</mc><br>water 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>밀랍 입자</mc><br>wax 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>발광 입자</mc><br>glow 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>분노 입자</mc><br>angry_villager 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>불 입자</mc><br>flame 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>불꽃 입자</mc><br>lava 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>브레스 입자</mc><br>dragon_breath 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>빗방울 입자</mc><br>rain 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>섬광 입자</mc><br>electric_spark 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>수증기 입자</mc><br>하늘색 dust 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>슬라임 입자</mc><br>item_slime 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>아포 입자</mc><br>spore_blossom_air 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>에메랄드 입자</mc><br>composter 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>엔드 입자</mc><br>end_rod 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>연기 입자</mc><br>smoke 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>영혼 입자</mc><br>soul 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>용암 입자</mc><br>dripping_lava 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>음표 입자</mc><br>note 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>재 입자</mc><br>ash 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>전기 입자</mc><br> 노란색 dust 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>전달체 입자</mc><br>nautilus 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>지옥불 입자</mc><br>soul_fire_flame 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>진홍빛 입자</mc><br>crimson_spore 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>치명타 입자</mc><br>crit 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>토템 입자</mc><br>totem_of_undying 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>판다 입자</mc><br>sneeze 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>피해 입자</mc><br>damage_indicator 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>폭죽 입자</mc><br>firework 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>하트 입자</mc><br>heart 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>행복 입자</mc><br>happy_villager 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>흑요석 입자</mc><br>dripping_obsidian_tear 입자를 생성합니다.</a></li>
+                <li><a class="group-2" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>휩쓸기 입자</mc><br>sweep_attack 입자를 생성합니다.</a></li>
+                <!-- 저주 마법 -->
+                <li><a class="group-3 group-9 group-15 group-17 group-18" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>각광 저주</mc><br>주변 몹들에게 공격받습니다.</a></li>
+                <li><a class="group-3 group-17" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>공복 저주</mc><br>배고픔 소모량이 증가합니다.</a></li>
+                <li><a class="group-3 group-6 group-7 group-8 group-9 group-10 group-11 group-12 group-13 group-14 group-15 group-16 group-17 group-18 group-19 group-20 group-21" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>부식 저주</mc><br>들고 있지 않을 때 내구도가 감소합니다.</a></li>
+                <li><a class="group-3 group-21" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>부정확 저주</mc><br>화살이 엇나갑니다.</a></li>
+                <li><a class="group-3 group-7 group-12 group-13 group-20" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>불운 저주</mc><br>파괴한 블록이 일정한 확률로 드롭되지 않습니다.</a></li>
+                <li><a class="group-3 group-13 group-19" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>비살상 저주</mc><br>공격이 무효화될 확률이 증가합니다.</a></li>
+                <li><a class="group-3 group-7 group-12 group-13 group-20" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>비파괴 저주</mc><br>블록을 파괴하지 못할 확률이 증가합니다.</a></li>
+                <li><a class="group-3 group-6 group-7 group-8 group-9 group-10 group-11 group-12 group-13 group-14 group-15 group-16 group-17 group-18 group-19 group-20 group-21" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>영속 저주</mc><br>모루를 통해 수정할 수 없습니다.</a></li>
+                <li><a class="group-3 group-7 group-12 group-13 group-20" href="#" onclick="alert('준비중인 리스트입니다.')"><mc>취약 저주</mc><br>내구도 감소량이 증가합니다.</a></li>
+                <!-- 특수 마법 -->
+                <li><a class="group-4 group-9 group-15 group-17 group-18" href="https://seedlist.kr/magic/special/1"><mc>가호</mc><br>피해를 받을 때 잠시 동안 저항 효과를 얻을 확률이 증가합니다. (중첩이 적용되지 않습니다.)</a></li>
+                <li><a class="group-4 group-21" href="https://seedlist.kr/magic/special/2"><mc>갈고리</mc><br>공격한 개체를 당깁니다.</a></li>
+                <li><a class="group-4 group-13 group-19" href="https://seedlist.kr/magic/special/3"><mc>갈퀴</mc><br>공격한 개체를 당깁니다.</a></li>
+                <li><a class="group-4 group-14" href="https://seedlist.kr/magic/special/4"><mc>감전</mc><br>상대가 벼락에 맞을 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-13 group-19" href="https://seedlist.kr/magic/special/5"><mc>격퇴</mc><br>슬라임과 마그마 큐브에게 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-16 group-21" href="https://seedlist.kr/magic/special/6"><mc>격파</mc><br>슬라임과 마그마 큐브에게 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-8" href="https://seedlist.kr/magic/special/7"><mc>견인</mc><br>개체를 당깁니다.</a></li>
+                <li><a class="group-4 group-16 group-21" href="https://seedlist.kr/magic/special/8"><mc>결빙</mc><br>공격한 상대가 속도 감소 효과를 얻을 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/9"><mc>결사</mc><br>주변에 몹이 많을수록 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/10"><mc>공허</mc><br>엔드에서 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-16 group-21" href="https://seedlist.kr/magic/special/11"><mc>과녁</mc><br>공격한 상대에게 주는 후속 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/12"><mc>괴사</mc><br>공격한 상대가 시듦 효과를 얻을 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-16 group-21" href="https://seedlist.kr/magic/special/13"><mc>괴저</mc><br>공격한 상대가 시듦 효과를 얻을 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-13" href="https://seedlist.kr/magic/special/14"><mc>교체</mc><br>나무를 파괴할 때 다른 나무가 드롭될 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-13 group-19" href="https://seedlist.kr/magic/special/15"><mc>구별</mc><br>길들인 몹이 피해를 받지 않도록 합니다.</a></li>
+                <li><a class="group-4 group-21" href="https://seedlist.kr/magic/special/16"><mc>구충</mc><br>벌레 몹에게 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-7" href="https://seedlist.kr/magic/special/17"><mc>굴삭</mc><br>블록을 3×3 크기로 파괴할 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-7" href="https://seedlist.kr/magic/special/18"><mc>굴착</mc><br>뒤의 블록을 함께 파괴할 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-7" href="https://seedlist.kr/magic/special/19"><mc>굴채</mc><br>광맥을 따라 광물을 채광합니다.</a></li>
+                <li><a class="group-4 group-10" href="https://seedlist.kr/magic/special/20"><mc>균열</mc><br>던진 삼지창이 껍질이 있는 몹에게 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/21"><mc>극복</mc><br>생명력이 더 높은 개체에게 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-15" href="https://seedlist.kr/magic/special/22"><mc>근성</mc><br>달리는 동안 배고픔이 줄어들지 않을 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/23"><mc>급격</mc><br>가까운 상대에게 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/24"><mc>급소</mc><br>공격한 상대에게 엄청난 피해를 줄 확률이 증가합니다. (최대 충전 공격에만 발동됩니다.)</a></li>
+                <li><a class="group-4 group-12" href="https://seedlist.kr/magic/special/25"><mc>기경</mc><br>경작지로 바꾸는 범위가 증가합니다.</a></li>
+                <li><a class="group-4 group-16 group-21" href="https://seedlist.kr/magic/special/26"><mc>기류</mc><br>공중에서 발사한 화살이 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/27"><mc>기사</mc><br>말에 타고 있을 때 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-13 group-19" href="https://seedlist.kr/magic/special/28"><mc>기습</mc><br>상대의 뒤에서 공격할 때 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-17" href="https://seedlist.kr/magic/special/29"><mc>기식</mc><br>질식 피해를 무시할 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/30"><mc>기아</mc><br>공격한 상대가 허기 효과를 얻을 확률이 증가합니다. (최대 충전 공격에만 발동됩니다.)</a></li>
+                <li><a class="group-4 group-14" href="https://seedlist.kr/magic/special/31"><mc>기진</mc><br>공격한 상대가 채굴 피로 효과를 얻을 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-10" href="https://seedlist.kr/magic/special/32"><mc>나락</mc><br>네더에서 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/33"><mc>낙뢰</mc><br>공격한 상대가 벼락에 맞을 확률이 증가합니다. (최대 충전 공격에만 발동됩니다.)</a></li>
+                <li><a class="group-4 group-9 group-15 group-17 group-18" href="https://seedlist.kr/magic/special/34"><mc>내성</mc><br>상태 효과로 인한 피해를 무시할 확률이 증가합니다. (중첩이 적용되지 않습니다.)</a></li>
+                <li><a class="group-4 group-9 group-15 group-17 group-18" href="https://seedlist.kr/magic/special/35"><mc>내화</mc><br>불로 인한 피해를 받을 때 불이 꺼질 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-12" href="https://seedlist.kr/magic/special/36"><mc>녹화</mc><br>좌클릭하여 흙 블록을 잔디 블록으로 바꿀 수 있게 됩니다.</a></li>
+                <li><a class="group-4 group-21" href="https://seedlist.kr/magic/special/37"><mc>누전</mc><br>크리퍼에게 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-13 group-19" href="https://seedlist.kr/magic/special/38"><mc>단선</mc><br>크리퍼에게 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-7" href="https://seedlist.kr/magic/special/39"><mc>대체</mc><br>돌을 파괴할 때 다른 종류의 돌이 드롭될 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-21" href="https://seedlist.kr/magic/special/40"><mc>도륙</mc><br>비공격적 몹에게 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-13 group-19" href="https://seedlist.kr/magic/special/41"><mc>도살</mc><br>비공격적 몹에게 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-10" href="https://seedlist.kr/magic/special/42"><mc>도축</mc><br>던진 삼지창이 비공격적 몹에게 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/43"><mc>독성</mc><br>공격한 상대가 독 효과를 얻을 확률이 증가합니다. (최대 충전 공격에만 발동됩니다.)</a></li>
+                <li><a class="group-4 group-6" href="https://seedlist.kr/magic/special/44"><mc>돌파</mc><br>개체를 통과할 때 피해를 줍니다.</a></li>
+                <li><a class="group-4 group-13 group-19" href="https://seedlist.kr/magic/special/45"><mc>돌풍</mc><br>공격한 상대를 공중으로 밀어냅니다.</a></li>
+                <li><a class="group-4 group-9 group-15 group-17 group-18" href="https://seedlist.kr/magic/special/46"><mc>동결</mc><br>공격한 상대가 속도 감소 효과를 얻을 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-21" href="https://seedlist.kr/magic/special/47"><mc>마찰</mc><br>발사한 화살이 지나는 궤적 주변의 개체에게 피해를 줍니다.</a></li>
+                <li><a class="group-4 group-16 group-21" href="https://seedlist.kr/magic/special/48"><mc>명중 충전</mc><br>헤드샷 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-13" href="https://seedlist.kr/magic/special/49"><mc>몰아치기</mc><br>흽쓸기 공격을 할 수 있게 됩니다.</a></li>
+                <li><a class="group-4 group-15" href="https://seedlist.kr/magic/special/50"><mc>무거운 착지</mc><br>추락 피해를 받을 때 주변의 개체에게 피해를 줍니다.</a></li>
+                <li><a class="group-4 group-10" href="https://seedlist.kr/magic/special/51"><mc>무상</mc><br>엔드에서 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-9 group-15 group-17 group-18" href="https://seedlist.kr/magic/special/52"><mc>바늘</mc><br>주변의 몹에게 피해를 줍니다.</a></li>
+                <li><a class="group-4 group-8" href="https://seedlist.kr/magic/special/53"><mc>바다의 선물</mc><br>낚은 아이템이 두 배로 드롭될 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-9 group-15 group-17 group-18" href="https://seedlist.kr/magic/special/54"><mc>반동</mc><br>상대를 밀어냅니다.</a></li>
+                <li><a class="group-4 group-14" href="https://seedlist.kr/magic/special/55"><mc>반사</mc><br>받은 피해 중 일부를 반사합니다.</a></li>
+                <li><a class="group-4 group-6" href="https://seedlist.kr/magic/special/56"><mc>발진</mc><br>폭죽을 사용한 추진 시 잠시 동안 엄청난 속도를 얻습니다.</a></li>
+                <li><a class="group-4 group-9 group-15 group-17 group-18" href="https://seedlist.kr/magic/special/57"><mc>방호</mc><br>도끼를 통해 받는 피해가 감소합니다. (중첩이 적용됩니다.)</a></li>
+                <li><a class="group-4 group-10" href="https://seedlist.kr/magic/special/58"><mc>방화</mc><br>던진 삼지창에 불이 붙습니다.</a></li>
+                <li><a class="group-4 group-16 group-21" href="https://seedlist.kr/magic/special/59"><mc>번개</mc><br>공격한 상대가 벼락에 맞을 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-13" href="https://seedlist.kr/magic/special/60"><mc>벌목</mc><br>나무 전체를 즉시 파괴합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/61"><mc>변심</mc><br>주변 몹들로 하여금 상대를 공격하게 만들 확률이 증가합니다. (최대 충전 공격에만 발동됩니다.)</a></li>
+                <li><a class="group-4 group-21" href="https://seedlist.kr/magic/special/62"><mc>변절</mc><br>주변 몹들로 하여금 상대를 공격하게 만들 확률이 증가합니다. (최대 장전 공격에만 발동됩니다.)</a></li>
+                <li><a class="group-4 group-9 group-15 group-17 group-18" href="https://seedlist.kr/magic/special/63"><mc>복원</mc><br>자연 회복 속도가 증가합니다. (중첩이 적용됩니다.)</a></li>
+                <li><a class="group-4 group-15" href="https://seedlist.kr/magic/special/64"><mc>부드러운 착지</mc><br>땅에 부딪히기 직전 느린 낙하 효과를 얻을 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-16 group-21" href="https://seedlist.kr/magic/special/65"><mc>부양</mc><br>공격한 상대가 공중 부양 효과를 얻을 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-9 group-15 group-17 group-18" href="https://seedlist.kr/magic/special/66"><mc>불멸</mc><br>생명력이 낮을 때 받는 피해가 감소하고 주는 피해가 증가합니다. (중첩이 적용됩니다.)</a></li>
+                <li><a class="group-4 group-7 group-12 group-13 group-20" href="https://seedlist.kr/magic/special/67"><mc>붕괴</mc><br>블록을 즉시 파괴할 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/68"><mc>빙결</mc><br>공격한 상대가 속도 감소 효과를 얻을 확률이 증가합니다. (최대 충전 공격에만 발동됩니다.)</a></li>
+                <li><a class="group-4 group-10" href="https://seedlist.kr/magic/special/69"><mc>뾰족함</mc><br>주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-17" href="https://seedlist.kr/magic/special/70"><mc>사냥</mc><br>길들인 늑대가 처치하여 드롭된 아이템과 경험치 구슬을 바로 획득합니다.</a></li>
+                <li><a class="group-4 group-21" href="https://seedlist.kr/magic/special/71"><mc>산탄</mc><br>화살 여러 개를 퍼지도록 발사합니다.</a></li>
+                <li><a class="group-4 group-21" href="https://seedlist.kr/magic/special/72"><mc>삼중 발사</mc><br>화살 세 개를 가로축에 일정한 간격으로 동시에 발사합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/73"><mc>선제</mc><br>생명력이 최대인 상대에게 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-13 group-19" href="https://seedlist.kr/magic/special/74"><mc>속공</mc><br>공격 속도가 증가합니다.</a></li>
+                <li><a class="group-4 group-21" href="https://seedlist.kr/magic/special/75"><mc>속사</mc><br>활을 당기는 속도가 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/76"><mc>수신</mc><br>수중에서 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-7 group-10 group-12 group-13 group-16 group-19 group-20 group-21" href="https://seedlist.kr/magic/special/77"><mc>수집</mc><br>드롭될 아이템과 경험치를 바로 획득합니다.</a></li>
+                <li><a class="group-4 group-16 group-21" href="https://seedlist.kr/magic/special/78"><mc>수해</mc><br>불 속성 몹에게 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-6" href="https://seedlist.kr/magic/special/79"><mc>수호</mc><br>받는 피해가 감소합니다.</a></li>
+                <li><a class="group-4 group-16 group-21" href="https://seedlist.kr/magic/special/80"><mc>식별</mc><br>길들인 몹이 피해를 받지 않도록 합니다.</a></li>
+                <li><a class="group-4 group-21" href="https://seedlist.kr/magic/special/81"><mc>신성</mc><br>언데드 몹에게 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-14" href="https://seedlist.kr/magic/special/82"><mc>암흑</mc><br>상대가 실명 효과를 얻을 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/83"><mc>야행성</mc><br>밤 동안 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/84"><mc>약화</mc><br>공격한 상대가 나약함 효과를 얻을 확률이 증가합니다. (최대 충전 공격에만 발동됩니다.)</a></li>
+                <li><a class="group-4 group-16 group-21" href="https://seedlist.kr/magic/special/85"><mc>어둠</mc><br>공격한 상대가 실명 효과를 얻을 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-10" href="https://seedlist.kr/magic/special/86"><mc>역린</mc><br>공격한 상대에게 엄청난 피해를 줄 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-7" href="https://seedlist.kr/magic/special/87"><mc>연금</mc><br>돌을 파괴할 때 다른 광물이 드롭될 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-21" href="https://seedlist.kr/magic/special/88"><mc>연사</mc><br>화살 여러 개를 연속으로 발사합니다.</a></li>
+                <li><a class="group-4 group-13 group-19" href="https://seedlist.kr/magic/special/89"><mc>영웅</mc><br>우민에게 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-13 group-19" href="https://seedlist.kr/magic/special/90"><mc>예리함</mc><br>플레이어에게 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-15" href="https://seedlist.kr/magic/special/91"><mc>완충</mc><br>추락 피해를 무시할 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-6" href="https://seedlist.kr/magic/special/92"><mc>완화</mc><br>벽에 충돌했을 때 받는 피해가 감소합니다.</a></li>
+                <li><a class="group-4 group-16 group-21" href="https://seedlist.kr/magic/special/93"><mc>용사</mc><br>보스 몹에게 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-16 group-21" href="https://seedlist.kr/magic/special/94"><mc>자상</mc><br>공격한 상대에게 출혈이 발생할 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-15" href="https://seedlist.kr/magic/special/95"><mc>자성</mc><br>드롭된 아이템과 경험치를 끌어옵니다.</a></li>
+                <li><a class="group-4 group-10" href="https://seedlist.kr/magic/special/96"><mc>작살</mc><br>수중에서 삼지창을 던질 때 물고기를 낚을 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-16 group-21" href="https://seedlist.kr/magic/special/97"><mc>저격</mc><br>공격한 상대가 멀수록 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-16 group-21" href="https://seedlist.kr/magic/special/98"><mc>저승</mc><br>네더에서 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-10" href="https://seedlist.kr/magic/special/99"><mc>적중</mc><br>헤드샷 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/100"><mc>전격</mc><br>철, 금, 또는 사슬 갑옷을 입은 상대에게 주는 피해가 증가합니다. (중첩이 적용됩니다.)</a></li>
+                <li><a class="group-4 group-14" href="https://seedlist.kr/magic/special/101"><mc>전의</mc><br>주변 몹들로 하여금 상대를 공격하게 만들 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-11" href="https://seedlist.kr/magic/special/102"><mc>전정</mc><br>잎으로부터 추가 아이템이 드롭될 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/103"><mc>절상</mc><br>공격한 상대에게 출혈이 발생할 확률이 증가합니다. (최대 충전 공격에만 발동됩니다.)</a></li>
+                <li><a class="group-4 group-6" href="https://seedlist.kr/magic/special/104"><mc>절약</mc><br>폭죽을 사용한 추진 시 폭죽을 소모하지 않을 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-10" href="https://seedlist.kr/magic/special/105"><mc>절연</mc><br>크리퍼에게 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-10" href="https://seedlist.kr/magic/special/106"><mc>정화</mc><br>언데드 몹에게 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-13" href="https://seedlist.kr/magic/special/107"><mc>제압</mc><br>검을 든 플레이어에게 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-10" href="https://seedlist.kr/magic/special/108"><mc>제충</mc><br>벌레 몹에게 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-14" href="https://seedlist.kr/magic/special/109"><mc>주안</mc><br>상대가 발광 효과를 얻을 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/110"><mc>주행성</mc><br>낮 동안 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/111"><mc>지옥</mc><br>네더에서 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-7 group-10 group-12 group-13 group-16 group-19 group-20 group-21" href="https://seedlist.kr/magic/special/112"><mc>지혜</mc><br>드롭되는 경험치가 증가합니다.</a></li>
+                <li><a class="group-4 group-16 group-21" href="https://seedlist.kr/magic/special/113"><mc>직사</mc><br>발사한 화살이 낙하하지 않습니다. (발사한 화살은 5초 후에 사라집니다.)</a></li>
+                <li><a class="group-4 group-10" href="https://seedlist.kr/magic/special/114"><mc>찍기</mc><br>주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-9 group-15 group-17 group-18" href="https://seedlist.kr/magic/special/115"><mc>착화</mc><br>상대에게 불이 붙을 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/116"><mc>참시</mc><br>처치한 위더 스켈레톤의 몹 머리 드롭 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-10" href="https://seedlist.kr/magic/special/117"><mc>창상</mc><br>공격한 상대에게 출혈이 발생할 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-8" href="https://seedlist.kr/magic/special/118"><mc>채찍</mc><br>찌를 건 개체를 당기면 피해를 줍니다.</a></li>
+                <li><a class="group-4 group-21" href="https://seedlist.kr/magic/special/119"><mc>처단</mc><br>생명력이 낮은 개체를 즉사시킬 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-10" href="https://seedlist.kr/magic/special/120"><mc>처분</mc><br>생명력이 낮은 개체를 즉사시킬 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/121"><mc>처형</mc><br>생명력이 낮은 개체를 즉사시킬 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-10" href="https://seedlist.kr/magic/special/122"><mc>천공</mc><br>공중에서 던진 삼지창이 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/123"><mc>충격</mc><br>다이아몬드 또는 네더라이트 갑옷을 입은 상대에게 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-13 group-19" href="https://seedlist.kr/magic/special/124"><mc>치명타</mc><br>치명적 공격으로 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-13 group-19" href="https://seedlist.kr/magic/special/125"><mc>침수</mc><br>불 속성 몹에게 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-13" href="https://seedlist.kr/magic/special/126"><mc>탈진</mc><br>공격한 상대가 채굴 피로 효과를 얻을 확률이 증가합니다. (최대 충전 공격에만 발동됩니다.)</a></li>
+                <li><a class="group-4 group-16 group-21" href="https://seedlist.kr/magic/special/127"><mc>탐지</mc><br>발사한 화살이 꽂힌 지점 주변의 개체가 발광 효과를 얻습니다.</a></li>
+                <li><a class="group-4 group-21" href="https://seedlist.kr/magic/special/128"><mc>통과</mc><br>발사한 화살이 개체를 통과합니다.</a></li>
+                <li><a class="group-4 group-10" href="https://seedlist.kr/magic/special/129"><mc>파문</mc><br>던진 삼지창이 꽂힌 지점 주변의 개체에게 피해를 줍니다.</a></li>
+                <li><a class="group-4 group-17" href="https://seedlist.kr/magic/special/130"><mc>포만</mc><br>배고픔이 줄어들지 않을 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/131"><mc>표적</mc><br>공격한 상대에게 주는 후속 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-9 group-15 group-17 group-18" href="https://seedlist.kr/magic/special/132"><mc>피신</mc><br>피해를 받아 생명력이 낮아지면 투명화 효과를 얻습니다.</a></li>
+                <li><a class="group-4 group-17" href="https://seedlist.kr/magic/special/133"><mc>항독</mc><br>엔더 드래곤 브레스로부터 받는 피해가 감소합니다.</a></li>
+                <li><a class="group-4 group-10" href="https://seedlist.kr/magic/special/134"><mc>해류</mc><br>수중에서 던진 삼지창의 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-13 group-19" href="https://seedlist.kr/magic/special/135"><mc>해방</mc><br>엔드에서 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-16 group-21" href="https://seedlist.kr/magic/special/136"><mc>허상</mc><br>엔드에서 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-16 group-21" href="https://seedlist.kr/magic/special/137"><mc>현기</mc><br>공격한 상대가 실명과 멀미 효과를 얻을 확률이 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/138"><mc>화신</mc><br>불이 붙었을 때 주는 피해가 증가합니다.</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/139"><mc>환각</mc><br>공격한 상대가 실명과 멀미 효과를 얻을 확률이 증가합니다. (최대 충전 공격에만 발동됩니다.)</a></li>
+                <li><a class="group-4 group-7 group-12 group-13 group-20" href="https://seedlist.kr/magic/special/140"><mc>환기</mc><br>수중에서 블록을 파괴할 때 산소를 회복합니다.</a></li>
+                <li><a class="group-4 group-14" href="https://seedlist.kr/magic/special/141"><mc>환원</mc><br>피해를 막을 때 생명력을 회복합니다.</a></li>
+                <li><a class="group-4 group-9 group-15 group-17 group-18" href="https://seedlist.kr/magic/special/142"><mc>활기</mc><br>최대 생명력이 증가합니다.</a></li>
+                <li><a class="group-4 group-9 group-15 group-17 group-18" href="https://seedlist.kr/magic/special/143"><mc>활채</mc><br>발사한 화살이 주는 피해가 증가합니다. (중첩이 적용됩니다.)</a></li>
+                <li><a class="group-4 group-9 group-15 group-17 group-18" href="https://seedlist.kr/magic/special/144"><mc>회피</mc><br>받은 피해를 무시할 확률이 증가합니다. (중첩이 적용됩니다.)</a></li>
+                <li><a class="group-4 group-19" href="https://seedlist.kr/magic/special/145"><mc>흘려내기</mc><br>들고 있을 때 받는 피해가 감소합니다.</a></li>
+                <li><a class="group-4 group-16 group-21" href="https://seedlist.kr/magic/special/146"><mc>흡수</mc><br>피해를 줄 때 생명력을 회복합니다.</a></li>
+                <li><a class="group-4 group-10" href="https://seedlist.kr/magic/special/147"><mc>흡인</mc><br>피해를 줄 때 생명력을 회복합니다.</a></li>
+                <li><a class="group-4 group-13 group-19" href="https://seedlist.kr/magic/special/148"><mc>흡혈</mc><br>피해를 줄 때 생명력을 회복합니다. (최대 충전 공격에만 발동됩니다.)</a></li>
+                <!-- 고유 마법 -->
+                <li><a class="group-5 group-9 group-15 group-17 group-18" href="https://seedlist.kr/magic/inherent/1"><mc>가이아</mc><br>최대 생명력이 크게 증가합니다.</a></li>
+                <li><a class="group-5 group-13 group-19" href="https://seedlist.kr/magic/inherent/2"><mc>네메시스</mc><br>피해를 줄 때 생명력을 크게 회복합니다. (최대 충전 공격에만 발동됩니다.)</a></li>
+                <li><a class="group-5 group-12" href="https://seedlist.kr/magic/inherent/3"><mc>데메테르</mc><br>작물을 수확할 때 그 씨앗이 자동으로 다시 심깁니다.</a></li>
+                <li><a class="group-5 group-19" href="https://seedlist.kr/magic/inherent/4"><mc>디오니소스</mc><br>공격한 상대의 핫바가 뒤섞일 확률이 증가합니다. (최대 충전 공격에만 발동됩니다.)</a></li>
+                <li><a class="group-5 group-19" href="https://seedlist.kr/magic/inherent/5"><mc>아레스</mc><br>주는 피해가 크게 증가합니다.</a></li>
+                <li><a class="group-5 group-21" href="https://seedlist.kr/magic/inherent/6"><mc>아르테미스</mc><br>발사한 화살이 주는 피해가 크게 증가합니다.</a></li>
+                <li><a class="group-5 group-7 group-10 group-12 group-13 group-16 group-19 group-20 group-21" href="https://seedlist.kr/magic/inherent/7"><mc>아테나</mc><br>드롭되는 경험치가 크게 증가합니다.</a></li>
+                <li><a class="group-5 group-16 group-21" href="https://seedlist.kr/magic/inherent/8"><mc>아폴론</mc><br>발사한 화살이 꽂힌 지점에 폭발을 일으킵니다.</a></li>
+                <li><a class="group-5 group-21" href="https://seedlist.kr/magic/inherent/9"><mc>아프로디테</mc><br>발사한 화살이 자동으로 목표를 추적합니다. (최대 장전 공격에만 발동됩니다.)</a></li>
+                <li><a class="group-5 group-21" href="https://seedlist.kr/magic/inherent/10"><mc>오리온</mc><br>화살 다섯 개를 가로축에 일정한 간격으로 동시에 발사합니다.</a></li>
+                <li><a class="group-5 group-15" href="https://seedlist.kr/magic/inherent/11"><mc>이리스</mc><br>점프 높이와 거리가 증가합니다.</a></li>
+                <li><a class="group-5 group-19" href="https://seedlist.kr/magic/inherent/12"><mc>제우스</mc><br>공격한 상대가 강력한 벼락에 맞을 확률이 증가합니다. (최대 충전 공격에만 발동됩니다.)</a></li>
+                <li><a class="group-5 group-19" href="https://seedlist.kr/magic/inherent/13"><mc>타나토스</mc><br>개체를 죽이면 힘 효과를 얻습니다.</a></li>
+                <li><a class="group-5 group-8" href="https://seedlist.kr/magic/inherent/14"><mc>트리톤</mc><br>찌를 건 개체를 당기면 큰 피해를 줍니다.</a></li>
+                <li><a class="group-5 group-7 group-12 group-13 group-20" href="https://seedlist.kr/magic/inherent/15"><mc>페르세스</mc><br>블록을 파괴하면 잠시 동안 성급함 효과를 얻습니다.</a></li>
+                <li><a class="group-5 group-10" href="https://seedlist.kr/magic/inherent/16"><mc>포세이돈</mc><br>던진 삼지창이 주는 피해가 크게 증가합니다.</a></li>
+                <li><a class="group-5 group-13" href="https://seedlist.kr/magic/inherent/17"><mc>하데스</mc><br>큰 피해를 주는 흽쓸기 공격을 할 수 있게 됩니다.</a></li>
+                <li><a class="group-5 group-9 group-15 group-17 group-18" href="https://seedlist.kr/magic/inherent/18"><mc>헤라</mc><br>받는 피해가 크게 감소합니다.</a></li>
+                <li><a class="group-5 group-13 group-19" href="https://seedlist.kr/magic/inherent/19"><mc>헤라클레스</mc><br>공격한 상대를 매우 세게 밀어냅니다.</a></li>
+                <li><a class="group-5 group-15" href="https://seedlist.kr/magic/inherent/20"><mc>헤르메스</mc><br>이동 속도가 증가합니다.</a></li>
+                <li><a class="group-5 group-7 group-12 group-13 group-20" href="https://seedlist.kr/magic/inherent/21"><mc>헤스티아</mc><br>파괴한 블록이 제련된 형태로 드롭됩니다.</a></li>
+                <li><a class="group-5 group-6 group-7 group-8 group-9 group-10 group-11 group-12 group-13 group-14 group-15 group-16 group-17 group-18 group-19 group-20 group-21" href="https://seedlist.kr/magic/inherent/22"><mc>헤파이스토스</mc><br>내구도가 크게 증가합니다.</a></li>
+                <li><a class="group-5 group-19" href="https://seedlist.kr/magic/inherent/23"><mc>헬리오스</mc><br>공격한 상대에게 폭발을 일으킵니다. (최대 충전 공격에만 발동됩니다.)</a></li>
+            </ul>
+        </div>
+        </main>
+        <footer>
+            <p>© 2022 시드리스트<br>Developed by <a onclick="alert('프론트엔드 개발자')">SourceH</a> <button class="social-btn" onclick="location.href='https://github.com/SourceH0325'"><i class="fa-brands fa-github"></i></button>, <a onclick="alert('백엔드 개발자')">Seo1001</a> <button class="social-btn" onclick="location.href='https://github.com/Seo1001'"><i class="fa-brands fa-github"></i></button></p>
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://kit.fontawesome.com/c089a3ac2e.js" crossorigin="anonymous"></script>
+        <script src="assets/js/main.js?220630"></script>
+    </body>
+</html>
