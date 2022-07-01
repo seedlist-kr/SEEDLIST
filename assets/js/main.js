@@ -22,14 +22,15 @@ $(document).ready(function() {
     var activeCat = "";
     function filterGroup(group){
         if(activeCat != group){
-        $("li > a").filter("."+group).show();
-        $("li > a").filter(":not(."+group+")").hide();
-        activeCat = group;
+            $("li > a").filter("."+group).show();
+            $("li > a").filter(":not(."+group+")").hide();
+            activeCat = group;
         }
     }
     
-    $(".cate-all").click(function(){
+    $(".cate-reset").click(function(){
         $("li > a").show();
+        $('.cate-popup-btns').removeClass('active');
         activeCat = "all";
     });
     $(".cate-1").click(function(){ filterGroup("group-1"); });
@@ -56,9 +57,14 @@ $(document).ready(function() {
     });
 
     $('.cate-popup-btns').click(function(){
-    $('.cate-popup-btns').removeClass('active');
-    $(this).addClass('active');
-});
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        }
+        else {
+            $(this).removeClass('active');
+            $(this).addClass('active');
+        }
+    });
 
 /* 검색 시스템 */
 
