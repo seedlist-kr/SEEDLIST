@@ -464,7 +464,8 @@ mc {
     border: none;
     font-size: 18px;
     background-color: #f9f9f9;
-    margin-right: 15px;
+    margin-right: 6px;
+    margin-left: 6px;
     margin-bottom: 6px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
