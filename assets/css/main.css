@@ -107,7 +107,6 @@ body {
     height: 100px;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition-duration: .3s;
 }
 
 .magic-next-buttons:hover {
@@ -136,13 +135,13 @@ body {
     border: none;
     background-color: #f9f9f9;
     color: #000;
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     border-radius: 100px;
     width: 200px;
     height: 200px;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition-duration: .3s;
 }
 
 .magic-buttons:hover {
@@ -197,7 +196,6 @@ body {
     height: 30px;
     font-size: 18px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition-duration: .3s;
 }
 
 .magic-popup-close-out {
@@ -245,7 +243,6 @@ body {
     margin-right: 15px;
     margin-bottom: 6px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition-duration: .3s;
 }
 
 .magic-popup-btns:hover {
@@ -317,7 +314,8 @@ body {
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     color: #868686;
-    margin-right: 15px;
+    margin-right: 8px;
+    margin-left: 8px;
     background-color: #f9f9f9;
     border: none;
     border-radius: 50px;
@@ -326,7 +324,6 @@ body {
     height: 30px;
     font-size: 18px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition-duration: .3s;
 }
 
 .main-search-btn-des:hover {
@@ -370,7 +367,6 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    transition-duration: .3s;
     border-radius: 50px;
     padding-top: 10px;
     font-size: 20px;
@@ -430,7 +426,6 @@ mc {
     height: 30px;
     font-size: 18px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition-duration: .3s;
 }
 
 .cate-popup-close-out {
@@ -472,7 +467,6 @@ mc {
     margin-right: 15px;
     margin-bottom: 6px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition-duration: .3s;
 }
 
 .cate-popup-btns.active {
