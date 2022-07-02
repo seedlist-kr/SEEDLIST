@@ -18,10 +18,12 @@ window.onclick = function(event) {
     }
 }
 
+
+
 $(document).ready(function() {
     var activeCat = "";
     function filterGroup(group){
-        if(activeCat != group){
+        if (activeCat != group){
             $("li > a").filter("."+group).show();
             $("li > a").filter(":not(."+group+")").hide();
             activeCat = group;
@@ -54,17 +56,17 @@ $(document).ready(function() {
     $(".cate-19").click(function(){ filterGroup("group-19"); });
     $(".cate-20").click(function(){ filterGroup("group-20"); });
     $(".cate-21").click(function(){ filterGroup("group-21"); });
-    });
+});
 
-    $('.cate-popup-btns').click(function(){
-        if ($(this).hasClass('active')) {
-            $(this).removeClass('active');
-        }
-        else {
-            $(this).removeClass('active');
-            $(this).addClass('active');
-        }
-    });
+$('.cate-popup-btns').click(function(){
+    if ($(this).hasClass('active')) {
+        $(this).removeClass('active');
+    }
+    else {
+        $(this).removeClass('active');
+        $(this).addClass('active');
+    }
+});
 
 /* 검색 시스템 */
 
